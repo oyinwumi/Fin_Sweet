@@ -692,7 +692,7 @@ height: 40px;
     width: 100%; 
 }
 .offer-grid{
-    grid-template-columns:200px 200px ;
+    grid-template-columns:50% 50%;
     margin: 10px;
 }
 .get-in-touch{
@@ -719,7 +719,8 @@ height: 40px;
     width: 150px;
 }
 .testionial-1{
-    width: 350px;
+    width: 100%;
+    margin: 0 0 20px 0;
 }
 .faq-container form {
 width: 100%;
