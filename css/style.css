@@ -12,7 +12,7 @@ body{
 }
 .container{
     width: 100%;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 .hero-section{
     background-color:#FFFFFF ;
@@ -103,6 +103,16 @@ font-weight: 600;
     
 }
 
+.hero-image{
+    background-image: url(../images/Header\ Image\ \(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vh;
+}
+
+
+
 
 .time{
     display: flex;
@@ -123,9 +133,8 @@ font-weight: 600;
 background-color: #050505;
 }
 
-.header-immage{
-    width: 100vh;
-    height: 100vh;
+.header-image{
+    width: 80vh;
     margin-left: 2rem;
 }
 
@@ -149,6 +158,7 @@ background-color: #050505;
     background-color: #E2E6E9;
     padding: 5rem;
     display: flex;
+    justify-content: space-between;
 }
 
 .service-left-section h2{
@@ -224,7 +234,7 @@ form{
 .quote-section{
     padding: 5rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .left-quote-section h2{
@@ -308,6 +318,8 @@ form{
     font-weight: 800;
     line-height: 1.2;
     color: #1E1B1B;
+    width: 619px;
+  margin: 0 auto;
 }
 
 .grid-item{
@@ -378,7 +390,7 @@ form{
    width: 100%;
    height: 60vh;
    display: flex;
-   position: relative;
+   
 
 }
 
@@ -572,3 +584,156 @@ margin-top: 20px;
     font-size: 14px;
     color: #939191; 
  }
+
+ /* mobile view */
+ @media(max-width:426px){
+    .container{
+        overflow-x: hidden;
+    }
+    .logo{
+        align-items: center !important;
+    }
+    .list{
+        display: none;
+    }
+    .road-assistance{
+        display: none;
+    }
+    .hero-body, .car-servicing,.quote-section {
+        flex-direction: column;
+        width: 100%;
+        /* padding: 10px; */
+    }
+    .hero-body{
+        margin: 1.25rem;
+        flex-direction: column;
+    }
+    .hero-image{
+        order: 1;
+        width: 100%;
+       height: 100%;
+     
+    }
+    .hero-text {
+        order: 2;
+    }
+    .hero-text h1{
+        font-size: 2rem;
+        width: 100%;  
+    }
+    
+ .car-servicing , .quote-section {
+        padding: 2rem;
+    }
+    .service-left-section h2 ,   .left-quote-section h2 {
+        width: 100%;
+        font-size: 30px;
+        font-weight: 800;
+        margin-bottom: 2rem;
+    }
+  
+    .tools{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    }
+    .tool-details h5, .footer-top-right p{
+        font-size: 18px;
+    }
+    .tool-details p, .know-more, .left-quote-section p, .footer-top-right h5 {
+        font-size: 12px;
+        width: 100%;
+    }
+    .know-more{
+        margin-bottom: 2rem;
+    }
+    .arrow {
+        margin-left: 10px;
+        width: 30px;
+    }
+    
+    .service-right-section{
+        margin-left: 2rem;
+    }
+.service-right-section h3 , .brand-section h3 , 
+.testimonial-section h3 , .freq-ask-question h3 , .footer-top-left h3 {
+    width: 100%;
+    font-size: 30px;
+   
+}
+.line{
+    display: none;
+}
+
+.right-quote-section {
+    margin-left: 0;
+}
+
+.quote-image {
+width: 40px;
+height: 40px;
+}
+
+.step-details h5 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+.step-details p{
+    font-size: 13px;  
+}
+.orange-btn{
+    margin-bottom: 20px;
+}
+.offer-text h6{
+    font-size: 18px;
+    width: 100%;    
+}
+.offer-text h2 {
+    font-size: 30px;  
+    width: 100%; 
+}
+.offer-grid{
+    grid-template-columns:200px 200px ;
+    margin: 10px;
+}
+.get-in-touch{
+    flex-direction: column;
+    background-position:center;
+    width: 100% , 100%;
+    background-size: cover;
+}
+.orange-square{
+    display: none;
+}
+.rating , .testimonial-container{
+    flex-direction: column;
+    width: 100%;
+}
+.brand-logo{
+    flex-direction: row;
+}
+.brand-one {
+    flex-direction: column;
+}
+.logo-img{
+    width: 150px;
+}
+.testionial-1{
+    width: 350px;
+}
+.faq-container form {
+width: 100%;
+}
+select{
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+}
+.footer-top, .footer-bottom{
+    flex-direction: column;
+}
+.footer-nav-bar{
+    display: block;
+}
+ }
+ 
