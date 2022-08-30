@@ -610,8 +610,8 @@ margin-top: 20px;
     }
     .hero-image{
         order: 1;
-        width: 100%;
-       height: 100%;
+        width: 60vh;
+        height: 60vh;
      
     }
     .hero-text {
@@ -625,10 +625,9 @@ margin-top: 20px;
  .car-servicing , .quote-section {
         padding: 2rem;
     }
-    .service-left-section h2 ,   .left-quote-section h2 {
+    .service-left-section h2 ,   .left-quote-section h2{
         width: 100%;
         font-size: 30px;
-        font-weight: 800;
         margin-bottom: 2rem;
     }
   
@@ -637,7 +636,7 @@ margin-top: 20px;
     height: 40px;
     border-radius: 30px;
     }
-    .tool-details h5, .footer-top-right p{
+    .tool-details h5, .footer-top-right p, .first-rating p{
         font-size: 18px;
     }
     .tool-details p, .know-more, .left-quote-section p, .footer-top-right h5 {
@@ -708,6 +707,7 @@ height: 40px;
 .rating , .testimonial-container{
     flex-direction: column;
     width: 100%;
+    justify-content: center;
 }
 .brand-logo{
     flex-direction: row;
@@ -729,11 +729,17 @@ select{
     padding: 20px;
     font-size: 16px;
 }
+.footer-section, .freq-ask-question , .testimonial-section {
+    padding: 15px;
+}
 .footer-top, .footer-bottom{
     flex-direction: column;
 }
 .footer-nav-bar{
     display: block;
+}
+.first-rating h2 {
+    font-size: 35px;
 }
  }
  
