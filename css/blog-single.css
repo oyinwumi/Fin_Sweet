@@ -88,159 +88,69 @@ color: #1E1B1B;
 font-size: 14px;
 font-weight: 600;
 }
-.our-blog{
-    display: flex;
-    margin-top: 20px;
-}
-.blog-image{
-    background-image: url(../images/blog-image.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 50%;
-    height: 70vh;
-}
-.blog-image h1{
-   font-size: 64px;
-   font-weight: 800;
-   color: #FFFFFF;
-    text-align: center;
-    margin-top: 7rem;
-}
-.blog-text{
-    background-color: #1E1B1B;
-    width: 50%;
-    height: 70vh;
-    padding: 3rem;
-}
-.blog-text h6{
-font-size: 16px;
-font-weight: 500;
-color: #FF6433;
-margin-bottom: 10px;
-}
-.blog-text h4{
-    font-size: 40px;
-    font-weight: 700;
-    color: #FFFFFF;
-    width: 582px;
-    margin-bottom: 10px;
-}
-.blog-text p{
-    font-size: 18px;
-    font-weight: 600;
-    color: #FFFFFF;
-    width: 614px;
-    margin-bottom: 20px;
-}
-.orange-btn{
-    border: none;
-     background-color: #FF6433;
-     color: #FFFFFF;
-     font-size: 16px;
-     border-radius: 12px;
-     padding: 10px;
-     cursor: pointer;
-     width: 172px;
- }
- 
- .orange-btn:hover{
- background-color: #050505;
- }
- .button{
-     display: flex;
- }
- .button p{
-    margin-left: 20px;
-    opacity: 80%;
- }
- .awesome-plate-number{
-    display: flex;
-    padding:5rem;
-    background-color: #F5F5F5;
- }
- .blog-car{
-    display: flex;
-    margin:10px;
-
- }
-.left-plate-number{
-    padding: 20px;
-    background-color: #FFFFFF;
- }
- .left-plate-number , .blog-car1{
-    margin-bottom: 15px;
- }
- .left-plate-number h4{
-    font-size: 35px;
-    color:  #1E1B1B;
-    width: 466px;
-    margin-bottom: 15px;
-    line-height: 1.2; 
- }
- .left-plate-number p {
-    font-size:16px;
-    color:  #939191;
-    width: 473px;
-   margin-bottom: 15px; 
- }
- .learn-more a{
-    text-decoration: none;
-    color: #1E1B1B;
-    font-size: 16px;
-   
-}
-.learn-more a:hover{
-    color: #FF6433;
-   
-}
-.arrow {
-    margin-left: 10px;
-    width: 40px;
-   margin-top: 1rem;
-}
-.right-plate-number{
-    margin-left: 15px;
-}
-.blog-car h5{
-    width: 478.56px;
-    font-size: 32px;
-    font-weight: 700;
-    color: #1E1B1B;
-    margin: 20px 20px 10px 20px;
-}
-.blog-car p{
-    font-size: 16px;
-    font-weight: 600;
-    color: #939191;
-    margin: 10px 20px;
-}
-.car-accessories{
+.new-car{
     padding: 5rem;
-    display: flex;
-    flex-direction: column;
 }
-.top-car-accessories , .bottom-car-accessories{
-    display: flex; 
-}
-.accessories1{
-    margin: 15px;
-}
-.accessories1 img{
-    width: 100%;
-}
-.accessories1 h5{
-    width: 100%;
-    font-size: 30px;
-    font-weight: 700;
-    color: #1E1B1B;
-    margin-top:  10px;
-}
-.accessories1 p{
+ .new-car-text p{
+    margin: 0 auto;
+    color: #232536;
     font-size: 16px;
     font-weight: 600;
-    color: #939191;
-    margin-top:  10px;
+    width: 896px;
+    opacity: 60%;
+    margin-bottom: 15px;
+}
+.new-car h3{
+    color: #1E1B1B;
+    font-size: 48px;  
+    font-weight: 700;
+    margin: 0 auto;
+    width: 896px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.new-car img{
+    margin-top: 25px;
+    width: 100%;
+}
+.big-head-line , .small-head-line{
+    margin: 40px auto;
+}
+.big-head-line h4 {
+    color: #1E1B1B;
+    font-size: 40px;  
+    font-weight: 700;
+    margin: 0 auto;
+    width: 896px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.big-head-line img {
+    margin: 25px auto;
+    width: 100%;
+    padding: 5rem;
+}
+.small-head-line h4 {
+    color: #1E1B1B;
+    font-size: 32px;  
+    font-weight: 700;
+    margin: 0 auto;
+    width: 896px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.small-head-line p, .big-head-line p {
+    margin: 0 auto;
+    color: #232536;
+    font-size: 16px;
+    font-weight: 600;
+    width: 896px;
+    opacity: 60%;
+    margin-bottom: 15px;
+}
+#small-heading{
+    border-left: 3px solid #1E1B1B !important;
+ padding: 15px;
 }
 .get-in-touch{
     background-image: url(../images/car1.png), url(../images/car-engine.png);
@@ -250,7 +160,7 @@ margin-bottom: 10px;
    width: 100%;
    height: 50vh;
    display: flex;
-   margin-top: 40px;
+   margin-top: 4rem;
  }
  .orange-square{
     background-color: #FF6433;
