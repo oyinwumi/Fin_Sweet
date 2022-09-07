@@ -92,7 +92,7 @@ font-weight: 600;
 .hero-body{
     display: flex;
     justify-content: space-between;
-    margin: 5rem;
+    padding: 5rem;
 }
 
 
@@ -337,8 +337,7 @@ form{
   grid-template-rows: 200px 200px ;
     grid-row-gap: 5px;
    grid-column-gap:10px;
-   margin-left:8rem;
-  
+   margin-left:8rem; 
 }
 
 .grid-item:hover{
@@ -433,7 +432,7 @@ padding: 100px 30px 40px 30px;
  }
 
  .brand-section{
-    margin: 30px;
+ padding: 30px;
  }
 
  .brand-section h3 ,  .testimonial-section h3 , .freq-ask-question h3{
@@ -467,8 +466,8 @@ padding-top:5rem;
  }
 
  .testimonial-section h3{
-width: 909px;
-margin: 30px auto;
+  width: 909px;
+  margin: 30px auto;
  }
 
  .testimonial-container{
@@ -486,7 +485,7 @@ margin: 30px auto;
 
 }
 
-.testimonial-text {
+.testimonial-text p{
 font-size: 20px;
 margin-top: 20px;
 
@@ -585,7 +584,7 @@ margin-top: 20px;
  }
 
  /* mobile view */
- @media(max-width:426px){
+ @media(max-width:600px){
     .container{
         overflow-x: hidden;
     }
@@ -604,7 +603,7 @@ margin-top: 20px;
         /* padding: 10px; */
     }
     .hero-body{
-        margin: 1.25rem;
+        padding:  0 1.25rem;
         flex-direction: column;
     }
     .hero-image{
@@ -676,7 +675,7 @@ height: 40px;
     font-size: 24px;
     margin-top: 10px;
 }
-.step-details p{
+.step-details p , .footer-top-right h5{
     font-size: 13px;  
 }
 .orange-btn{
@@ -694,26 +693,49 @@ height: 40px;
     grid-template-columns:50% 50%;
     margin: 10px;
 }
+/* .grid-item{
+    height: 150px;
+    padding-top: 2rem;
+} */
 .get-in-touch{
-    flex-direction: column;
-    background-position:center;
-    width: 100% , 100%;
-    background-size: cover;
+    background-position:top, bottom;
+   width: 100%;
+   height: 60vh;
+  
 }
 .orange-square{
-    display: none;
+        background-color: #FF6433;
+        color: #FFFFFF;
+        width: 50%;
+        height: 30vh;
+        position: relative;
+        left:25%;
+        top: 20%;
 }
+.orange-square h3{
+    font-size: 18px;
+    padding: 20px;
+    
+    }
 .rating , .testimonial-container{
     flex-direction: column;
     width: 100%;
-    justify-content: center;
+   align-items: center;
 }
+.brand-section{
+    padding: 30px;
+    margin:0 auto;
+ }
 .brand-logo{
     flex-direction: row;
+    justify-content: center;
 }
 .brand-one {
     flex-direction: column;
 }
+.brand-section h3 ,  .testimonial-section h3 , .freq-ask-question h3{
+    font-size: 25px;
+     }
 .logo-img{
     width: 150px;
 }
@@ -742,4 +764,297 @@ select{
     font-size: 35px;
 }
  }
+
+ /* Tablet view */
+ @media(min-width:601px) and (max-width:900px){
+.container{
+    overflow: hidden;
+}
+.hero-body{
+    padding: 3rem;
+}
+.nav-section {
+    padding: 0 2rem;
+}
+.list a{
+    text-decoration: none;
+    margin: 10px;
+   font-size: 14px;
+}
+.list::after{
+display: none;
+ }
+ .call-svg{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin:  0 10px;
+}
+.hero-text h1 {
+    width: 100%;
+    font-size:35px;
+    margin: 2rem 0;
+    line-height: 1.2;
+}
+.service-left-section h2 {
+    width: 100%;
+    font-size: 30px;
+}
+
+.car-servicing, .quote-section {
+    padding: 3rem;
+}
+
+.service-right-section {
+    margin-left: 3rem;
+}
+.service-right-section h3 {
+    width: 100%;
+    font-size: 30px;
+
+}
+input, .left-quote-section p {
+    width:100%;
+}
+
+.quote-section {
+    flex-direction: column;
+    justify-items: center;
+}
+.left-quote-section h2 {
+    width:100%;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.right-quote-section {
+    margin-left: 0;
+    margin-top: 30px;
+}
+.offer-text h2 {
+    font-size: 30px;
+    width:100%;
+}
+.grid-item{
+     height: 150px;
+     padding-top: 2rem;
+}
+.offer-grid{
+    display: grid;
+    grid-template-columns:200px 200px 200px ;
+    grid-template-rows: 150px 150px 150px;
+}
+.orange-square {
+    width: 50%;
+    height: 28vh;
+    position: relative;
+    left: 25%;
+    top:26%; 
+}
+.orange-square h3{
+    font-size: 24px;
+    padding: 30px;
+}
+
+.first-rating h2{
+    font-size: 40px;
+}
+.first-rating p, .footer-top-right p {
+    font-size: 18px;
+}
+.brand-section{
+    padding: 30px;
+    margin:0 auto;
+ }
+.brand-logo{
+    flex-direction: row;
+    justify-content: center;
+}
+.brand-one {
+    flex-direction: column;
+}
+.brand-section h3 ,  .testimonial-section h3 , .freq-ask-question h3 {
+    font-size: 25px;
+     }
+.faq-container form {
+    width: 100%;
+align-items: center;
+}
+
+select {
+    width: 100%;
+    border: none;
+    padding: 20px;
+   
+}
+.footer-section{
+    padding: 10px;
+    width: 100%;
+}
+ .footer-top-left h3{
+    width: 100%;
+    font-size: 30px;
+ }
+}
+
+/* small screen laptop */
+@media(min-width:901px) and (max-width:1400px){
+    .container{
+        /* overflow: hidden; */
+    }
+    .hero-body{
+        padding: 4rem;
+        width: 100%;
+    }
+    .nav-section {
+        padding: 0 3rem;
+    }
+    .list a{
+        text-decoration: none;
+        margin: 15px;
+       font-size: 16px;
+    }
+    .call-svg{
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        margin:  0 10px;
+    }
+    .hero-text h1 {
+        width: 100%;
+        font-size:45px;
+        margin: 2rem 0;
+        line-height: 1.2;
+    }
+       .service-left-section h2 {
+        width: 100%;
+        font-size: 40px;
+    }
+    .car-servicing, .quote-section {
+        padding: 4rem;
+    }
+    .service-right-section {
+        margin-left: 3rem;
+    }
+      .service-right-section h3 {
+        width: 100%;
+        font-size: 35px;
+    
+    }
+       input, .left-quote-section p, .offer-section {
+        width:100%;
+    }
+
+.line {
+    position: relative;
+    top: 10px;
+   left: 25px;
+}
+.left-quote-section h2 ,  .offer-text h2 {
+    /* width:100%; */
+    font-size:45px;
+}
+.grid-item{
+    height: 180px;
+    /* padding-top: 2rem; */
+}
+.offer-grid{
+margin-left: 0;
+grid-template-columns:230px 230px 230px  230px;
+justify-content: center;
+}
+.orange-square {
+    width: 40%;
+    height: 48vh;
+top: 30px;
+}
+.orange-square h3{
+    font-size: 30px;
+    padding: 30px;
+}
+.brand-section{
+  width: 100%;
+ }
+ .logo-img{
+    width: 200px;
+ }
+ .brand-logo{
+    justify-content: center;
+}
+    /* 
+  
+   
  
+    
+  
+    
+  
+  
+ 
+    
+  
+ 
+    
+    .right-quote-section {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+   {
+        font-size: 30px;
+        width:100%;
+    }
+   
+    .offer-grid{
+        display: grid;
+        grid-template-columns:200px 200px 200px ;
+        grid-template-rows: 150px 150px 150px;
+    }
+    .orange-square {
+        width: 50%;
+        height: 28vh;
+        position: relative;
+        left: 25%;
+        top:26%; 
+    }
+   
+    
+    .first-rating h2{
+        font-size: 40px;
+    }
+    .first-rating p, .footer-top-right p {
+        font-size: 18px;
+    }
+    .brand-section{
+        padding: 30px;
+        margin:0 auto;
+     }
+    .brand-logo{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .brand-one {
+        flex-direction: column;
+    }
+    .brand-section h3 ,  .testimonial-section h3 , .freq-ask-question h3 {
+        font-size: 25px;
+         }
+    .faq-container form {
+        width: 100%;
+    align-items: center;
+    }
+    
+    select {
+        width: 100%;
+        border: none;
+        padding: 20px;
+       
+    }
+    .footer-section{
+        padding: 10px;
+        width: 100%;
+    }
+     .footer-top-left h3{
+        width: 100%;
+        font-size: 30px;
+     }   */
+}
