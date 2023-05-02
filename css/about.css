@@ -305,12 +305,15 @@ font-weight: 800;
 color: #1E1B1B;
  }
 .team-container{
+ width: 100%;
  display: grid;
  grid-template-columns: 405px 405px 405px;
  grid-template-rows: 432px 432px;
  grid-column-gap: 10px;
  grid-row-gap: 10px;
-
+ margin: 0 auto;
+ justify-content: center;
+ align-items: center;
  }
  .profile-details{
      background-color: #161616;
