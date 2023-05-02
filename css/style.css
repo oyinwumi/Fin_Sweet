@@ -8,7 +8,7 @@ body{
     width: 100%;
     height: 100%;
     font-family:'Manrope' , sans-serif;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 .container{
     width: 100%;
@@ -19,18 +19,38 @@ body{
 }
 
 .nav-section{
+    /* width: 100%;
+    height: 80px; */
     display: flex;
     justify-content: space-between; 
     padding: 0 5rem ;
+    position: relative;
+}
+.hamburger{
+    position: absolute;
+    top: .5rem;
+   right: 1rem;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 30px;
+    height: 21px;
+}
+.hamburger .lines{
+    width: 100%;
+    height: 3px;
+    background-color: #FFFFFF;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .nav-bar{
-  margin-top: 25px;
+  /* margin-top: 25px; */
   display: flex;
 }
 
 .logo{
-    margin-top: 20px; 
+    margin-bottom: 20px; 
 }
 
 li{
@@ -52,6 +72,7 @@ li{
 }
 
 .list {
+  
     display: flex;
     justify-content: space-evenly;
 
@@ -112,6 +133,7 @@ font-weight: 600;
     background-size: cover;
     background-position: center;
     width: 100vh;
+    justify-items: center;
 }
 .time{
     display: flex;
@@ -292,13 +314,20 @@ form{
 }
 
 .offer-container{
+    width: 100%;
     background-color: #F2F2F2;
+    /* margin: 0 auto; */
     margin-bottom: 3rem;
+   
 }
 
 .offer-section{
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 .offer-text{
     background-color: #F2F2F2;
@@ -314,12 +343,12 @@ form{
 }
 
 .offer-text h2{
-    font-size: 52px;
+    font-size: 48px;
     font-weight: 800;
     line-height: 1.2;
     color: #1E1B1B;
     width: 619px;
-  margin: 0 auto;
+     margin: 0 auto;
 }
 
 .grid-item{
@@ -588,11 +617,41 @@ margin-top: 20px;
     .container{
         overflow-x: hidden;
     }
-    .logo{
+    /* .logo{
         align-items: center !important;
+    } */
+    
+    .nav-section{
+        padding:  2rem ;
     }
+    .nav-bar{
+       display: none; 
+       flex-direction: column;
+       align-items: center;
+       margin-top: 60px;    
+
+    }
+    .nav-bar li{
+        text-align: center;
+
+    }
+    .nav-bar li a{
+        padding: 0.5rem 1rem;
+    }
+
     .list{
-        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .list li {
+        padding: 15px;
+        justify-items: center;
+      
+    }
+    .list li a{
+        font-size: 18px;
     }
     .road-assistance{
         display: none;
@@ -612,12 +671,34 @@ margin-top: 20px;
         height: 60vh;
      
     }
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        margin: 20px;
+        color: #000;
+    }
+
+    .hamburger .lines{
+        width: 30px;
+        height: 3px;
+        background: #000;
+         margin: 6px 0;
+    }
+    .nav-bar.active {
+    display: flex;
+    
+    }
     .hero-text {
         order: 2;
     }
     .hero-text h1{
-        font-size: 2rem;
-        width: 100%;  
+        font-size: 1.75rem;
+        width: 100%; 
+        text-align: center; 
+    }
+    .hero-body .orange-btn{
+        margin-left: 22px;
     }
     
  .car-servicing , .quote-section {
@@ -627,6 +708,9 @@ margin-top: 20px;
         width: 100%;
         font-size: 30px;
         margin-bottom: 2rem;
+    }
+    .hero-body .date{
+        margin-bottom: 20px;
     }
   
     .tools{
@@ -690,8 +774,10 @@ height: 40px;
     width: 100%; 
 }
 .offer-grid{
-    grid-template-columns:50% 50%;
+    grid-template-columns:100%;
     margin: 10px;
+    gap: 15px;
+    width: 80%;
 }
 /* .grid-item{
     height: 150px;
@@ -844,6 +930,7 @@ input, .left-quote-section p {
     grid-template-columns:200px 200px 200px ;
     grid-template-rows: 150px 150px 150px;
 }
+
 .orange-square {
     width: 50%;
     height: 28vh;
